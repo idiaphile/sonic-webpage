@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    margin: 15 15;
+    background-image: url(IMAGES_MAIN/MAIN-BACKGROUND.png); background-size: cover;
+    overflow: hidden;
+}
+.Container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5%;
+}
+.Fritz, .Gracer, .Hannah {
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    flex: 1;
+    width: 30%;
+    max-width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.Fritz {
+    background-color: #fff647;
+    border: 2px solid #ffc941;
+    color:#60621a;
+ }
+
+ .Gracer {
+    background-color: #645be6;
+    border: 2px solid #4339d7;
+    color:#1b1a62;
+ }
+
+ .Hannah {
+    background-color: #d55555;
+    border: 2px solid #902626;
+    color:#621a1a;
+ }
+.Description {
+    transition: color 0.3s ease; 
+}
+ .Description:hover{
+   color: #fffeee;
+ }
+
+ .Fritz img, .Gracer img, .Hannah img {
+    transition: transform 0.3s ease; 
+ }
+.Fritz img:hover, .Gracer img:hover, .Hannah img:hover {
+    transform: scale(1.1); 
+}
+.navigation-button{
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+.navigation-button:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+body {
+    opacity: 0;
+    animation: fadeInPage 1s forwards ease-in;
+}
+@keyframes fadeInPage {
+    to {
+        opacity: 1;
+    }
+}
